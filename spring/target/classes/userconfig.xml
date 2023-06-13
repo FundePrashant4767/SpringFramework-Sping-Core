@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean class="com.jspiders.spring.bean.ProductBean" name="product1">
+        <property name="id" value="12"/>
+        <property name="name" value="Iphone"/>
+        <property name="price" value="50000"/>
+        <property name="users">
+        
+        <list>
+        <bean class="com.jspiders.spring.bean.UserBean" name="user1 ">
+        <property name ="id" value="1"/>
+                <property name ="name" value="Ram"/>
+                <property name ="address" value="Pune"/>
+                
+         </bean>
+         <bean class="com.jspiders.spring.bean.UserBean" name="user2">
+          <property name ="id" value="2"/>
+                <property name ="name" value="Sham"/>
+                <property name ="address" value="Pune"/>
+                
+         
+         </bean>
+        </list>
+        </property>
+        </bean>
+</beans>
